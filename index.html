@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Event Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Marozva's Arcane JS Playground</h1>
+    </header>
+
+    <main>
+      <!-- Button Interactions -->
+      <section>
+        <h2>Event Buttons</h2>
+        <button id="color-button">Click Me to Change Color</button>
+        <button id="dblclick-button">Double-Click Me</button>
+      </section>
+
+      <!-- Hover Image Gallery -->
+      <section>
+        <h2>Image Hover Gallery</h2>
+        <div class="gallery">
+          <img
+            src="https://placekitten.com/200/200"
+            alt="Kitten"
+            class="hover-img"
+          />
+          <img
+            src="https://placekitten.com/201/200"
+            alt="Kitten"
+            class="hover-img"
+          />
+        </div>
+      </section>
+
+      <!-- Accordion -->
+      <section>
+        <h2>Accordion</h2>
+        <div class="accordion">
+          <button class="accordion-toggle">Reveal Hidden Lore</button>
+          <div class="accordion-content">
+            Behold the ancient secrets of JavaScript!
+          </div>
+        </div>
+      </section>
+
+      <!-- Keypress Magic -->
+      <section>
+        <h2>Keypress Magic</h2>
+        <input type="text" id="key-input" placeholder="Type and see magic..." />
+        <p id="keypress-output"></p>
+      </section>
+
+      <!-- Form Validation -->
+      <section>
+        <h2>Signup Form</h2>
+        <form id="signup-form" novalidate>
+          <label
+            >Email:
+            <input type="email" id="email" required />
+            <span class="feedback" id="email-feedback"></span> </label
+          ><br />
+          <label
+            >Password:
+            <input type="password" id="password" required minlength="8" />
+            <span class="feedback" id="password-feedback"></span> </label
+          ><br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Marozva's Guild of Interactivity</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
